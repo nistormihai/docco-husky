@@ -323,12 +323,6 @@ MATLAB
     filter remove_inline %.*$
     3rd_gen_scale 4.00
     end_of_line_continuation \.\.\.\s*$
-MSBuild scripts
-    filter remove_html_comments
-    filter call_regexp_common HTML
-    extension csproj
-    extension wdproj
-    3rd_gen_scale 1.90
 MUMPS
     filter remove_matches ^\s*;
     extension mps
@@ -353,7 +347,6 @@ NASTRAN DMAP
 NAnt scripts
     filter remove_html_comments
     filter call_regexp_common HTML
-    extension build
     3rd_gen_scale 1.90
 Objective C
     filter remove_matches ^\s*//
@@ -370,7 +363,6 @@ Objective C++
     end_of_line_continuation \\$
 Ocaml
     filter call_regexp_common Pascal
-    extension ml
     3rd_gen_scale 3.00
     end_of_line_continuation \\$
 Octave
